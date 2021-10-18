@@ -1,6 +1,6 @@
 {
-	"name": "cartalyst/sentry",
-	"description": "PHP 5.3+ Fully-featured Authentication & Authorization System",
+	"name": "codise/sentry",
+	"description": "Fully-featured Authentication & Authorization System",
 	"keywords": ["auth", "security", "laravel", "codeigniter", "fuelphp", "kohana"],
 	"license": "BSD-3-Clause",
 	"authors": [
@@ -30,10 +30,10 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3.3"
+		"php": "^7.1|^8.0"
 	},
 	"require-dev": {
-		"mockery/mockery": "0.9.*",
+		"mockery/mockery": "^1.4",
 
 		"illuminate/cookie": ">=4.0.9,<4.2",
 		"illuminate/database": ">=4.0.9,<4.2",
@@ -59,7 +59,7 @@
 	},
 	"extra": {
 		"component": "package",
-		"frameworks": ["Laravel 3", "Laravel 4", "CodeIgniter 3", "FuelPHP 1", "Kohana"],
+		"frameworks": ["Laravel 6", "Laravel 7", "Laravel 8", "CodeIgniter 3", "FuelPHP 1", "Kohana"],
 		"versions": {
 			"1": "1.1/master",
 			"2": "master"
