@@ -8,10 +8,6 @@ Sentry is fully-featured authentication & authorization system. It also provides
 
 Sentry is a framework agnostic set of interfaces with default implementations, though you can substitute any implementations you see fit.
 
-[![Build Status](https://travis-ci.org/cartalyst/sentry.png?branch=master)](https://travis-ci.org/cartalyst/sentry)
-
-![Bitdeli](https://d2weczhvl823v0.cloudfront.net/cartalyst/sentry/trend.png)
-
 ### Features
 
 It also provides additional features such as user groups and additional security features:
@@ -32,15 +28,24 @@ It also provides additional features such as user groups and additional security
 
 Installation of Sentry is very easy. We've got a number of guides to get Sentry working with your favorite framework or on it's own:
 
-- [Install Sentry](https://cartalyst.com/manual/sentry#installation)
+	composer require codise/sentry
+	
+After installing the package, open your Laravel config file app/config/app.php and add the following lines.
 
-### Upgrading
+	'Cartalyst\Sentry\SentryServiceProvider',
 
-Currently, we do not have an upgrade method from Sentry 1, however we may be able to publish one before the stable release of Sentry 2.0. When upgrading between betas or release-candidates, please see [our changelog](https://github.com/cartalyst/sentry/blob/master/changelog.md).
+In the aliases array add the following facade for this package.
 
-### Support
+	'Sentry' => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+	
+### Migrations
 
-We offer support through [our help forums](http://help.cartalyst.com), on [IRC at #cartalyst](http://webchat.freenode.net/?channels=cartalyst) and through GitHub issues (bugs only).
+	php artisan migrate --package=codise/sentry
+	
+### Configuration
 
-If you like Sentry, consider [subscribing](http://www.cartalyst.com/pricing) to our [Arsenal](http://www.cartalyst.com/arsenal). It allows us to keep creating awesome software and afford to eat at night. Subscribers also get **priority support** with all of our packages, both free and subscriber-only.
+After installing, you can publish the package configuration file into your application by running the following command:
 
+	php artisan config:publish codise/sentry
+	
+This will publish the config file to app/config/packages/cartalyst/sentry/config.php where you can modify the package configuration.
