@@ -95,7 +95,7 @@ return array(
 		|
 		*/
 
-		'model' => 'Cartalyst\Sentry\Groups\Eloquent\Group',
+		'model' => 'Codise\Sentry\Groups\Eloquent\Group',
 
 	),
 
@@ -120,7 +120,7 @@ return array(
 		|
 		*/
 
-		'model' => 'Cartalyst\Sentry\Users\Eloquent\User',
+		'model' => 'Codise\Sentry\Users\Eloquent\User',
 
 		/*
 		|--------------------------------------------------------------------------
@@ -186,7 +186,7 @@ return array(
 		|
 		*/
 
-		'model' => 'Cartalyst\Sentry\Throttling\Eloquent\Throttle',
+		'model' => 'Codise\Sentry\Throttling\Eloquent\Throttle',
 
 		/*
 		|--------------------------------------------------------------------------

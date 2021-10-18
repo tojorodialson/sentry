@@ -5,28 +5,8 @@
 	"license": "BSD-3-Clause",
 	"authors": [
 		{
-			"name": "Cartalyst LLC",
-			"email": "help@cartalyst.com"
-		},
-		{
-			"name": "Dan Syme",
-			"email": "dan.syme@cartalyst.com",
-			"role": "Creator & Designer"
-		},
-		{
-			"name": "Ben Corlett",
-			"email": "ben.corlett@cartalyst.com",
-			"role": "Developer"
-		},
-		{
-			"name": "Daniel Petrie",
-			"email": "dan.petrie@cartalyst.com",
-			"role": "Developer"
-		},
-		{
-			"name": "Bruno Gaspar",
-			"email": "bruno.gaspar@cartalyst.com",
-			"role": "Developer"
+			"name": "Tojo RODIALSON",
+			"email": "tojo.rodialson@everabyte.com"
 		}
 	],
 	"require": {
@@ -48,9 +28,9 @@
 	},
 	"autoload": {
 		"classmap": [
-			"src/Cartalyst/Sentry/Groups/Exceptions.php",
-			"src/Cartalyst/Sentry/Throttling/Exceptions.php",
-			"src/Cartalyst/Sentry/Users/Exceptions.php",
+			"src/Codise/Sentry/Groups/Exceptions.php",
+			"src/Codise/Sentry/Throttling/Exceptions.php",
+			"src/Codise/Sentry/Users/Exceptions.php",
 			"src/migrations"
 		],
 		"psr-0": {
