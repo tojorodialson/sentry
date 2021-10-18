@@ -1,7 +1,3 @@
-## Help Support Sentinel version 3
-
-http://igg.me/at/sentinel-open-source
-
 # Sentry
 
 Sentry is fully-featured authentication & authorization system. It also provides additional features such as user groups and additional security features.
