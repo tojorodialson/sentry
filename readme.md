@@ -28,11 +28,11 @@ Installation of Sentry is very easy. We've got a number of guides to get Sentry 
 	
 After installing the package, open your Laravel config file app/config/app.php and add the following lines.
 
-	Cartalyst\Sentry\SentryServiceProvider,
+	Codise\Sentry\SentryServiceProvider::class,
 
 In the aliases array add the following facade for this package.
 
-	'Sentry' => Cartalyst\Sentry\Facades\Laravel\Sentry,
+	'Sentry' => Codise\Sentry\Facades\Laravel\Sentry::class,
 	
 ### Migrations
 
